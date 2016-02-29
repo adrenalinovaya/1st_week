@@ -1,0 +1,1 @@
+my @ary = split /:/, $_; for(my $i = 0; $i < @ary; $i++) { print $..':'.($i + 1)."\n" if $ary[$i] > 10; }

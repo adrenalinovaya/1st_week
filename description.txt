@@ -1,0 +1,13 @@
+1. 
+dir > files1.txt
+perl -n f1.pl < files1.txt
+
+2.perl -n f2.pl < f2.txt
+
+3. perl -MData::Dumper -n f3.pl < f2.txt
+ perl - MDDP -n f4.pl < f2.txt
+ 
+4. perl -d f3.pl
+l
+c
+сам файл со сценарием будет позже

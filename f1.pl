@@ -1,0 +1,1 @@
+BEGIN { $files = 0; $mfiles = 0; } next unless /^\d+/o; my (undef, $siz, $n) = unpack 'A21A15A*'; next if $siz =~/DIR/o; $siz =~ s/[\s\xff]+//go; $files++; next if $siz < 1024*1024; $mfiles++; print $n."\n";  END { print "total: $files, >1mb: $mfiles\n"; }
